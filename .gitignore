@@ -1,0 +1,17 @@
+.idea/
+.env
+venv/
+*__pycache__*
+*.pyc
+*.pyd
+*.pyo
+.vscode/
+Thumbs.db
+.DS_Store/
+*.sqlite3
+media/
+books/
+images/
+*.svg
+*.log
+*.json
