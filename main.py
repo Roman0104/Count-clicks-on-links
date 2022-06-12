@@ -12,9 +12,9 @@ def shorten_link(url, token):
     }
     payload = {
         'long_url': url,
-        'domain': os.getenv('BITLY_DOMAIN'),
+        'domain': os.getenv('BITLY_DOMAIN', 'bit.ly'),
         'group_guid': os.getenv('BITLY_GROUP_GUID'),
-        'title': os.getenv('BITLY_TITLE'),
+        'title': os.getenv('BITLY_TITLE', 'Bitly My'),
     }
 
     response = requests.post(
